@@ -5,10 +5,12 @@ class Departure extends CI_Controller {
 	/**
 	 * 
 	 * Apps : GFIS
-	 * Version : 2.0.0
-	 * Code Base : Codeigniter 2.1.3
+	 * Version : 3.0.0
+	 * Code Base : Codeigniter 2.1.4
 	 * Developer : SIGAP Team
 	 * Project Leader : mantara@gapura.co.id
+	 *
+	 * Please do not copy, share, modify or distribute this application without developer permission
 	 *	
 	 */
 	 
@@ -28,7 +30,10 @@ class Departure extends CI_Controller {
 # INDEX ==============================================================================================
 	public function index()
 	{
-			echo "depature";
+			#$date = $this->uri->segment(4, mdate("%Y-%m-%d", now()));
+			#$date = mdate("%Y-%m-%d", strtotime($date));
+			$date = $this->uri->segment(4);
+			echo $date;
 	}
 # INDEX =============================================================================================
 
