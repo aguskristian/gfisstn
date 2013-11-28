@@ -3,8 +3,8 @@
 <tr>
 	<th>FLIGHT</th>
     <th>DEST</th>
-    <th>STD</th>
-    <th>ETD</th>
+    <th>STA</th>
+    <th>ETA</th>
     <th>ADV</th>
    
     <th>PARK</th>
