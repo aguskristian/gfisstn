@@ -25,8 +25,16 @@ foreach($query as $items):
 	echo "<td>" . strtoupper($items->dsd_flt_nbr) . "</td>";
 	echo "<td>" . strtoupper($items->dsd_stn_to) . "</td>";
 	echo "<td>" . strtoupper(mdate("%H:%i", strtotime($items->dsd_std))) . "</td>";
-	echo "<td>" . strtoupper($items->dsd_flt_nbr) . "</td>";
-	echo "<td>" . strtoupper($items->dsd_flt_nbr) . "</td>";
+	echo "<td>" . strtoupper($items->dsdetd_etd) . "</td>";
+	echo "<td>" . strtoupper($items->dsdadv_adv) . "</td>";
+	echo "<td>" . strtoupper($items->dsdgate_gate) . "</td>";
+	echo "<td>" . strtoupper($items->dsdpark_park) . "</td>";
+	echo "<td>" . strtoupper($items->dsdreg_reg) . "</td>";
+	echo "<td>" . strtoupper($items->dsdrotasi_rotasi) . "</td>";
+	echo "<td>" . strtoupper($items->dsddel_del) . "</td>";
+	echo "<td>" . strtoupper($items->dsddel_remarks) . "</td>";
+	
+	
 	echo "</tr>";
 	
 endforeach;
