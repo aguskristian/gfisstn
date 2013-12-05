@@ -102,6 +102,7 @@ class Departure extends CI_Controller {
 		{
 			$data['query'] = $this->departure_model->get_by_date_departed_arrived_by_airline($stn, $date, $airline, $status, $rows);
 		}
+			
 		
 		# CALL VIEWS
 		$this->load->view('departure', $data);

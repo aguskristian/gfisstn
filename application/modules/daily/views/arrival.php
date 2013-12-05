@@ -6,7 +6,6 @@
     <th>STA</th>
     <th>ETA</th>
     <th>ADV</th>
-   
     <th>PARK</th>
     <th>REG</th>
     <th>ROT</th>
@@ -26,8 +25,7 @@ foreach($query as $items):
 	echo "<td>" . strtoupper($items->dsa_stn_to) . "</td>";
 	echo "<td>" . strtoupper(mdate("%H:%i", strtotime($items->dsa_sta))) . "</td>";
 	echo "<td>" . strtoupper($items->dsaeta_eta) . "</td>";
-	echo "<td>" . strtoupper($items->dsaadv_adv) . "</td>";
-	
+	echo "<td>" . strtoupper($items->dsaadv_adv) . "</td>";	
 	echo "<td>" . strtoupper($items->dsapark_park) . "</td>";
 	echo "<td>" . strtoupper($items->dsareg_reg) . "</td>";
 	echo "<td>" . strtoupper($items->dsarotasi_rotasi) . "</td>";
