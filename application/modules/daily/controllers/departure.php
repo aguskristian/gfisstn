@@ -34,7 +34,13 @@ class Departure extends CI_Controller {
 	}
 # INDEX =============================================================================================
 
-
+	public function add_form ()
+	{
+		$this->load->view('header');
+		$this->load->view('form_departure');
+		$this->load->view('footer');
+	}
+	
 	public function schedule()
 	{
 		# STN CODE
@@ -105,7 +111,9 @@ class Departure extends CI_Controller {
 			
 		
 		# CALL VIEWS
+		$this->load->view('header');
 		$this->load->view('departure', $data);
+		$this->load->view('footer');
 	}
 
 

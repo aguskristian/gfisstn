@@ -104,7 +104,9 @@ class Arrival extends CI_Controller {
 		}
 		 
 		# CALL VIEWS
+		$this->load->view('header');
 		$this->load->view('arrival', $data);
+		$this->load->view('footer');
 	}
 
 
